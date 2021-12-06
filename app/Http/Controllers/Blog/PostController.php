@@ -13,11 +13,17 @@ class PostController extends BaseController
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    /*public function index()
     {
         $items = BlogPost::all();
 
         return view('blog.posts.index', compact('items'));
+    }*/
+    public function index()
+    {
+        $posts = BlogPost::with(['user', 'category'])->get();
+
+        return $posts;
     }
 
     /**
