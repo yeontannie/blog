@@ -44,4 +44,4 @@ Route::group($groupData, function () {
      ->names('blog.admin.posts');
  });
 
- Route::get('api/blog/posts', [\App\Http\Controllers\Blog\Admin\PostController::class, 'index']);
+Route::get('api/blog/posts', [\App\Http\Controllers\Api\Blog\PostController::class, 'index']);

@@ -13,5 +13,6 @@ require('vuetifyjs-mix-extension');
  */
 
 mix.js('resources/js/app.js', 'public/js')
+    .vue()
     .vuetify()
     .sass('resources/sass/app.scss', 'public/css');

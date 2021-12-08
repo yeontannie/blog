@@ -1,5 +1,10 @@
-@extends('layouts.main')
+@extends('layouts.app')
 
+@section('content')
+    <vuetify-table-component></vuetify-table-component>
+@endsection
+
+{{--
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
@@ -26,7 +31,7 @@
                                 <tr @if (!$post->is_published) style="background-color: #ccc;" @endif>
                                     <td>{{ $post->id }}</td>
                                     <td>{{ $post->user->name }}</td>    {{-- виводимо ім'я користувача і назву категорії зі зв'язаних таблиць --}}
-                                    <td>{{ $post->category->title }}</td>
+                                {{--    <td>{{ $post->category->title }}</td>
                                     <td><a href="{{ route('blog.admin.posts.edit', $post->id) }}">{{ $post->title }}</a></td>
                                     <td>{{ $post->published_at ? \Carbon\Carbon::parse($post->published_at)->format('d.M H:i') : '' }}
                                     </td>
@@ -51,4 +56,4 @@
             </div>
         @endif
     </div>
-@endsection
+@endsection --}}
