@@ -28,6 +28,7 @@ Vue.component('vuetify-table-component', require('./components/VuetifyTableCompo
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+vuetify: new Vuetify();
 
 const app = new Vue({
     vuetify: new Vuetify(),

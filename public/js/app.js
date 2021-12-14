@@ -5516,6 +5516,8 @@ Vue.component('vuetify-table-component', (__webpack_require__(/*! ./components/V
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+vuetify: new (vuetify__WEBPACK_IMPORTED_MODULE_0___default())();
+
 var app = new Vue({
   vuetify: new (vuetify__WEBPACK_IMPORTED_MODULE_0___default())(),
   el: '#app'
